@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import SidebarLinkGroup from "./SidebarLinkGroup";
-import Logo from "/logo3.jpeg";
+import Logo from "/logo3.png";
 import { LuUser, LuUsers } from "react-icons/lu";
 import { RxDashboard } from "react-icons/rx";
 import { IoSettingsOutline, IoStorefrontOutline } from "react-icons/io5";

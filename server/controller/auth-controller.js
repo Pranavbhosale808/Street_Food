@@ -36,33 +36,6 @@ const register = async (req, res) => {
     }
 }
 
-// const login = async (req, res) => {
-//     try {
-//         const { email, password } = req.body;
-//         const userExits = await User.findOne({ email });
-//         console.log(userExits)
-//         if (!userExits) {
-//             console.log("Inavlid ");
-//         }
-
-//         if (userExits && userExits.comparePassword(password)) {
-//             res.status(200).json({
-//                 msg: "Login successful",
-//                 token: await userExits.generateToken(),
-//                 userId: userExits._id.toString(),
-//             })
-//             console.log("Login successful",email)
-//         }
-
-//         else {
-//             res.status(401).send({ msg: "Invalid email or password" })
-//         }
-//     } catch (error) {
-//         console.log("Error in login  " + error);
-//     }
-// }
-
-
 const login = async (req, res) => {
     try {
         const { email, password } = req.body;

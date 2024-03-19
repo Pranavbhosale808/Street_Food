@@ -61,7 +61,7 @@ function Navbar() {
           role="button"
           onClick={() => dispatch(setSidebar(true))}
         />
-        <img src={logo} alt="" className="w-20 h-full" />
+        <img src={logo} alt="" className="w-20 h-full scale-150 hover:bg-sky-700" />
         <ul className="hidden lg:flex space-x-4">
           {links.map((item, i) => {
             return (
@@ -99,7 +99,7 @@ function Navbar() {
             <DropdownMenuTrigger>
               <Avatar>
                 <AvatarImage src="" />
-                <AvatarFallback>AG</AvatarFallback>
+                <AvatarFallback>U</AvatarFallback>
               </Avatar>
             </DropdownMenuTrigger>
             <DropdownMenuContent>
