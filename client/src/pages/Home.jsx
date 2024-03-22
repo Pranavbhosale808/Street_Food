@@ -17,11 +17,11 @@ function Home() {
         <SearchBar />
         {/* <Offers /> */}
         <NavGrid />
-        {/* <ProdSlide1 title={"What's delicious around here?"} /> */}
+        <ProdSlide1 title={"What's delicious around here?"} />
         <img src={""} alt="promo" />
         <ShopSlide1 title={"Nearby Restaurants"} />
-        {/* <ProdSlide1 title={"Highlights of March"} />
-        <Recommended /> */}
+        {/* <ProdSlide1 title={"Highlights of March"} /> */}
+        <Recommended />
       </div>
       <BottomNav />
     </div>

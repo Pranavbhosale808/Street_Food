@@ -8,10 +8,6 @@ const userSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    // lname:{
-    //     type:String,
-    //     required:true
-    // },
     phoneNumber: {
         type: Number,
         required: true
@@ -24,10 +20,6 @@ const userSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    // cpassword:{
-    //     type:String,
-    //     required:true
-    // },
     isAdmin: {
         type: Boolean,
         default: false
@@ -74,17 +66,6 @@ userSchema.methods.generateToken = async function () {
         console.log("Generate Web token error : \n", error);
     }
 }
-
-// Comapring the new password with hash_password
-// userSchema.methods.comparePassword = async function (newpass) {
-//     try {
-//         return await bcrypt.compare(newpass, this.password);
-//     } catch (error) {
-//         console.log(error, "Indicating password checker");
-
-//     }
-// }
-
 userSchema.methods.comparePassword = async function (password) {
     try {
         return await bcrypt.compare(password, this.password);

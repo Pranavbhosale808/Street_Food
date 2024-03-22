@@ -48,11 +48,11 @@ const vendorSchema = new mongoose.Schema({
     type: {
       type: String,
       enum: ['Point'],
-      required: false
+      required: true
     },
     coordinates: {
       type: [Number],
-      required: false,
+      required: true,
       index: '2dsphere'
     }
   },
@@ -81,16 +81,6 @@ const vendorSchema = new mongoose.Schema({
     type:Map,
     of:String,
   },
-  // openingHour: {
-  //   type: String,
-  //   required: true,
-  //   // Add custom validation if needed
-  // },
-  // closingHour: {
-  //   type: String,
-  //   required: true,
-  //   // Add custom validation if needed
-  // }
 }
 );
 vendorSchema.index({ 'menu.name': 'text' });
